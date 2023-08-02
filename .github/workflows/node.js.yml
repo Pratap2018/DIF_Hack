@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Automate Generator and deploy:
+  Automate_Generator_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
