@@ -1,12 +1,13 @@
 {
-  "name": "vuejs-tailwindcss-portfolio",
+  "name": "DIF_Hackathon",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate":"node scripts/generate.js",
+    "generate": "node scripts/generate.js",
     "serve": "npm run generate && vue-cli-service serve ",
     "build": "npm run generate && vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -15,6 +16,7 @@
     "@vue/cli-plugin-router": "^5.0.8",
     "core-js": "^3.27.2",
     "feather-icons": "^4.29.0",
+    "gh-pages": "^5.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^7.8.3",
