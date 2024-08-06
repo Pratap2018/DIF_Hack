@@ -8,7 +8,7 @@ export default {
 	data: () => {
 		return {
 			projects,
-			projectsHeading: 'DIF Hack - submissions',
+			projectsHeading: 'Hack Along - Submissions',
 			selectedCategory: '',
 			searchProject: '',
 		};
@@ -24,15 +24,15 @@ export default {
 	},
 	methods: {
 		// Filter projects by category
-		// filterProjectsByCategory() {
-		// 	return this.projects.filter((item) => {
-		// 		let category =
-		// 			item.category.charAt(0).toUpperCase() +
-		// 			item.category.slice(1);
-		// 		console.log(category);
-		// 		return category.includes(this.selectedCategory);
-		// 	});
-		// },
+		filterProjectsByCategory() {
+			return this.projects.filter((item) => {
+				let category =
+					item.category.charAt(0).toUpperCase() +
+					item.category.slice(1);
+				console.log(category);
+				return category.includes(this.selectedCategory);
+			});
+		},
 		// Filter projects by title search
 		filterProjectsBySearch() {
 			let project = new RegExp(this.searchProject, 'i');
